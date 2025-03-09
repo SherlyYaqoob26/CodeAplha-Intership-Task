@@ -44,11 +44,8 @@ The following preprocessing steps were applied:
 - **Splitting Data** into Training and Test Sets
 
 ## 🏗️ Model Training
-We trained various classification models:
+Model trained on classification model:
 1. **Logistic Regression**
-2. **Random Forest Classifier**
-3. **Support Vector Machine (SVM)**
-4. **Gradient Boosting Classifier**
 
 The best-performing model was selected based on **accuracy, precision, recall, and F1-score.**
 
@@ -79,7 +76,8 @@ Since the model achieved **100% accuracy and ROC AUC = 1.0**, we checked for:
 - Deploy the model using **Flask or Streamlit**.
 
 ## 🏆 Conclusion
-This project successfully classifies Titanic passengers based on survival probability. However, the perfect scores suggest further investigation is needed to ensure generalization.
+This project successfully classifies Titanic passengers based on survival probability.
+However, the perfect scores suggest further investigation is needed to ensure generalization.
 
 ## 🤝 Contributing
 Feel free to fork and contribute to this project!
