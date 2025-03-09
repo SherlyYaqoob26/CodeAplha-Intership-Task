@@ -1,0 +1,95 @@
+# Stock Price Prediction using LSTM & Streamlit
+
+## 📌 Project Overview
+This project uses **Long Short-Term Memory (LSTM)** neural networks to predict stock prices based on historical data.
+The model is built using **TensorFlow/Keras** and is deployed using **Streamlit** for an interactive web-based dashboard.
+
+## 📁 Project Structure
+```
+Stock Prediction(Task2)/
+│── stock_prediction.py   # Main script for Streamlit app
+│── Stock Prediction.ipynb  # Jupyter Notebook for data analysis & model training
+│── TATAMOTORS.NS.csv   # Dataset (replace with your own stock data)
+│── README.md   # Project documentation
+│── .vscode/   # VS Code settings (if applicable)
+│── .ipynb_checkpoints/   # Jupyter notebook checkpoints
+```
+
+## 🚀 Installation & Setup
+1. **Clone the repository (or download the files):**
+   ```bash
+   git clone https://github.com/your-repo-url.git
+   cd Stock Prediction(Task2)
+   ```
+2. **Create a virtual environment (optional but recommended):**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Mac/Linux
+   venv\Scripts\activate  # On Windows
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+   *(If `requirements.txt` is missing, manually install the required libraries:)*
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn tensorflow streamlit
+   ```
+4. **Run the Streamlit app:**
+   ```bash
+   streamlit run stock_prediction.py
+   ```
+
+## 📊 Dataset & Features
+- **Input Data:** Historical stock price data (CSV format)
+- **Features Used:**
+  - `Close` price (target variable)
+  - `SMA_50`: 50-day simple moving average
+  - `Daily_Change`: Percentage change in closing price
+  
+## 🏗 Model Architecture
+- **LSTM Layers:** 2 stacked LSTMs
+- **Activation Functions:** tanh (LSTM), linear (output layer)
+- **Optimizer:** Adam 
+- **Loss Function:** Mean Squared Error (MSE)
+
+## 🎨 Streamlit Dashboard
+The app provides:
+- **Training Loss Visualization:** Track model performance over epochs.
+- **Stock Price Prediction Chart:** Compare actual vs. predicted prices.
+- **User Input Options:** Upload new CSV files for predictions.
+
+## ❗ Troubleshooting
+**Issue:** `FileNotFoundError: stock_prediction.py does not exist`
+- Ensure you are in the correct directory:
+  ```bash
+  cd Stock Prediction(Task2)
+  ```
+- Run the script with:
+  ```bash
+  streamlit run stock_prediction.py
+  ```
+
+**Issue:** Poor Model Performance (High RMSE, Low R²)
+- Check data scaling (MinMaxScaler should be applied correctly).
+- Increase LSTM units or epochs.
+- Try different optimizers (`Adam` with a lower learning rate).
+- Shuffle data before splitting (`shuffle=True` in train_test_split).
+
+## 🏆 Future Improvements
+- **Feature Engineering:** Incorporate additional stock indicators.
+- **Hyperparameter Tuning:** Use GridSearchCV for optimal LSTM settings.
+- **Live Stock Data:** Fetch real-time stock prices using APIs.
+
+## 🤝 Contributing
+Feel free to fork this repo, open issues, or submit PRs!
+
+## 📜 License
+This project is licensed under the MIT License.
+
+---
+
+**Author:** Your Name  
+📧 Contact: your.email@example.com  
+🔗 GitHub: [your-github-profile](https://github.com/your-github-profile)
+
