@@ -28,16 +28,12 @@ Stock Prediction(Task2)/
    venv\Scripts\activate  # On Windows
    ```
 3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   *(If `requirements.txt` is missing, manually install the required libraries:)*
-   ```bash
+   
    pip install pandas numpy matplotlib seaborn scikit-learn tensorflow streamlit
    ```
 4. **Run the Streamlit app:**
    ```bash
-   streamlit run stock_prediction.py
+   streamlit run stock_pre.py
    ```
 
 ## 📊 Dataset & Features
@@ -46,6 +42,7 @@ Stock Prediction(Task2)/
   - `Close` price (target variable)
   - `SMA_50`: 50-day simple moving average
   - `Daily_Change`: Percentage change in closing price
+   --rsi 
   
 ## 🏗 Model Architecture
 - **LSTM Layers:** 2 stacked LSTMs
@@ -60,14 +57,14 @@ The app provides:
 - **User Input Options:** Upload new CSV files for predictions.
 
 ## ❗ Troubleshooting
-**Issue:** `FileNotFoundError: stock_prediction.py does not exist`
+**Issue:** `FileNotFoundError: stock_pre.py does not exist`
 - Ensure you are in the correct directory:
   ```bash
   cd Stock Prediction(Task2)
   ```
 - Run the script with:
   ```bash
-  streamlit run stock_prediction.py
+  streamlit run stock_pre.py
   ```
 
 **Issue:** Poor Model Performance (High RMSE, Low R²)
@@ -89,7 +86,7 @@ This project is licensed under the MIT License.
 
 ---
 
-**Author:** Your Name  
-📧 Contact: your.email@example.com  
-🔗 GitHub: [your-github-profile](https://github.com/your-github-profile)
+**Author:** Sherly Yaqoob  
+📧 Contact: sherly.yaqoob@gmail.com  
+🔗 GitHub: [SherlyYaqoob26](https://github.com/your-github-profile)
 
